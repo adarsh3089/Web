@@ -1,0 +1,674 @@
+<!doctype html>
+<html>
+<head>
+ <title>Adarsh's BBC</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+ <style type="text/css">
+ 
+ body{
+     margin:0;
+	 font-family:Arial,Helvetica,freesans,sans-serif;
+ }
+ 
+ .topbar{
+       background-color:#7A0000;
+	   width:100%;
+	   height:40px;
+	   color:white;
+	   
+ }
+	  
+ .fieldwidth{
+        width:1000px;
+        margin:0 auto;
+        overflow: auto;
+       
+ }
+ 
+ .bbclogo{
+        padding:6px 10px 6px 0;
+		float:left;
+		border-right:1px solid #990001;
+		
+		
+ }
+ 
+ .signin{
+        padding:9px 80px 14px 20px;
+		border-right:1px solid #990001;
+		float:left;
+		font-weight:bold;
+		font-size:0.9em;
+		
+ }
+ 
+ .signin img{
+        position:relative;
+        top:2px;
+        right:5px;  		
+ }
+ 
+ .topnew{
+        float:left; 
+		
+ }
+ 
+ .topnew ul{
+        margin:0; 
+		padding:0;
+		overflow: auto;
+}
+ 
+ .topnew li{
+        list-style:none;
+        font-weight:bold;
+        font-size:0.9em;
+		border-right:1px solid #990001;
+		padding:12px 15px 12px 15px;
+		float:left;
+		
+ }
+ 
+ .searchbox{
+        float:right;
+        padding:8px 0 8px 8px; 
+		
+ }
+ 
+ .searchbox input{
+        width:200px;
+		height:22px;
+        padding-left:5px;
+		font-weight:bold;
+		border:0;
+		background-image:url("images/magnify.png");
+		background-repeat:no-repeat;
+		background-position:right center;
+ }
+ 
+ .blank{
+        clear:both;
+ }
+ 
+ .newsbar{
+        float:left;
+        background-color:#990001;
+	    width:100%;
+	    height:80px;
+	    color:white;
+ 
+ }
+ 
+ .newsheader{
+        float:left;
+        margin:0;
+		font-size:2.5em;
+		padding:10px 0 0 0;
+		
+ }
+ 
+ .ukheader{
+         font-size:0.6em;
+		 padding-left:20px;
+ 
+ }
+ 
+ .rss{
+		 float:right;	
+		 margin:0;
+		 padding:25px 0 0 0;
+		 font-size:0.7em;
+ }
+ 
+ .rss img{
+         padding:8px 0 0 5px;
+ }
+ 
+ .menubar{
+         float:left;
+         background-color:#3C0C0D;
+		 height:25px;
+		 width:100%;
+ }
+ 
+ .menubar ul{
+        margin:0; 
+		//padding:0;
+		padding:5px 0 4px 0;
+		overflow: auto;
+}
+ 
+ .menubar li{
+        list-style:none;
+        font-weight:bold;
+        font-size:0.7em;
+		border-right:1px solid #990001;
+		padding:0 10px 0 10px;
+		float:left;
+		
+ }
+ 
+.main-page{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+ .content{
+       width:100%;
+       font-size:0.75em;
+	   color:#616161;
+	  
+ }
+ 
+ .main{
+     float:left;
+     width:660px;
+ }
+ 
+ .side{
+     float:right;
+     width:320px;
+ }
+
+ .date{
+       font-weight:bold;
+	   
+ }
+ 
+  h1{
+       
+	   font-size:2.5em;
+	   padding:0 0 10px 0;
+	   margin:0;
+	   
+ }
+ 
+  .main p{
+       margin: 0;
+       padding-top:10px; 
+  }
+ 
+ .headimage{
+      float:left;
+      position: relative;
+	  width:400px;
+	  padding:0 10px 10px 0;
+ }
+ 
+ .newsitem{
+      float:left;
+      width:680px;
+      overflow: auto;
+	  
+ }
+
+ .newsitemcontent{
+ 	  //float: right;
+ 	  //position: relative;
+ 	  //overflow: auto;
+ }
+
+ .newsitemcontentstyle{
+ 	  float: right;
+ 	  //position: relative;
+ 	  width: 38%;
+ }
+ 
+ .newsitem p{
+ 	  //float: right;
+ 	  color:#616161;
+      padding:0;
+      margin: 0;
+      //overflow: auto;
+
+ }
+
+ .newsitem ul{
+ 	    float: right;
+        margin:0; 
+		padding:5px 29px 5px 0;
+}
+ 
+ .newsitem li{
+        list-style:none;
+        font-size:1em;
+		padding:2px 20px 2px 0;
+		
+ }
+ 
+  a{
+	  text-decoration:none;
+	  color:#4B85C6;
+	  
+ }
+ 
+  a:hover{
+      text-decoration:underline;
+ }
+ 
+ .video{
+      background-image:url("images/play.png");
+	  background-repeat:no-repeat;
+	  background-position:left center;
+	  padding-left:20px;
+	  color:#4B85C6;
+ }
+ 
+ .sound{
+      background-image:url("images/sound.png");
+	  background-repeat:no-repeat;
+	  background-position:left center;
+	  padding-left:20px;
+	  color:#4B85C6;
+	  
+ }
+ 
+ .watchlisten{
+      float:right;
+      background-color:#EDEDED;
+	  width:320px;
+	  margin-top:20px;
+	  overflow: auto;
+	 
+ }
+
+ .watchlisten h3{
+ 	   padding:5px 160px 5px 0;
+ 	   float:right;
+	   margin:0;
+	   color:#616161;
+	   font-size:2em; 
+		
+ }
+ 
+ h2{
+      margin:0;
+	  padding:10px 0 10px 0;
+	  font-size:2.5em;
+ }
+ 
+ .leftmove{
+      float:left;
+	  border-right:1px solid white;
+		
+ }
+ 
+ .wl1{
+      float:left;
+	  color:#E1DCE0;
+	  width:135px;
+	  background-color:#DF6F0B;
+	  border-right:1px solid white;
+		
+ }
+ 
+ .wl1 p{
+       margin:0;
+	   padding:4px 5px 9px 5px;
+ }
+ 
+ .wl1 a{
+       color:white;
+ }
+ 
+ .wl2{
+      float:left;
+	  color:#E1DCE0;
+	  width:137px;
+	  background-color:#DF6F0B;
+	  border-right:1px solid white;
+		
+ }
+ 
+ .wl2 p{
+       margin:0;
+	   padding:4px 5px 9px 5px;
+ }
+ 
+ .wl2 a{
+       color:white;
+ }
+
+ .live p{
+     margin:0;
+	 padding-top:5px;
+	 font-weight:bold;
+	 color:#4B85C6
+ }
+ 
+ .live img{
+     float:left;
+     padding:5px;
+ }
+ 
+ .bbcbreaking{
+     float:left;
+	 padding-top:10px;
+	 
+ }
+ 
+ .breakingimage{
+     float:left;
+	 padding:0 15px 10px 0;
+	 width:320px;
+	 height:160px;
+	 position: relative;
+ }
+ 
+ 
+ 
+ .headnew{
+     color:red;
+	 font-size:0.7em;
+	 padding-left:15px;
+ }
+ 
+  .analysis{
+      float:right;
+      background-color:#EDEDED;
+	  width:320px;
+	  margin-top:20px;
+ }
+ 
+  .features{
+      float:left;
+      
+		
+ }
+
+ .analysis h3{
+ 	   padding:5px 80px 0 0; 
+ 	   float:right;
+	   margin:0;
+	   color:#616161;
+	   font-size:2em; 
+		
+ }
+ 
+ .features ul{
+        margin:0; 
+		padding:0;
+}
+ 
+ .features li{
+        list-style:none;
+		padding:5px 15px 10px 10px;
+		margin-bottom:5px;
+
+ }
+ 
+ .features img{
+        float:left;
+		padding:0 5px 0 0;
+		position: relative;
+		
+		
+ }
+ 
+ .features p{
+ 	   // float: right;
+        margin:0; 
+		padding:5px 0 0 1px;
+		//position: relative;
+		
+		
+ }
+
+  
+ 
+ h4{
+ 	 float: left;
+ 	 padding: 0;
+ 	 margin:0;
+	 color:#4B85C6;
+	 font-size:1.3em;
+
+ }
+
+ .bottom{
+      background-color:#4C4C4C;
+	  width:100%;
+	  color: #FFFFFF ! important;
+	   
+ }
+
+ .bottom h4{
+ 	  font-size: 1.8em;
+ 	  text-decoration: none ! important;
+ }
+
+ .clearfix:after{
+      content:"";
+      display: table;
+      clear: both;
+
+ }
+ 
+ </style>
+
+
+ </head>
+
+ <body>
+
+   <header>
+   	
+   	  <div class="topbar">
+	 
+	      <div class="fieldwidth">
+		  
+		     <div class="bbclogo">
+			 
+			   <img src="images/bbclogo.png" />
+			 
+			 </div>
+			 
+			 
+		     <div class="signin">
+			 
+			   <img src="images/signin.png" />Sign in
+			 
+			 </div>
+			 
+			 <nav class="topnew">
+			    
+			   <ul>
+				
+				    <li>News</li>
+				    <li>Sports</li>
+				    <li>Weather</li>
+				    <li>IPlayer</li>
+				    <li>TV</li>					
+				    <li>Radio</li>
+				    <li>More...</li>
+				
+			   </ul>
+			 
+		     </nav>
+			 
+			 <div class="searchbox">
+			 
+			   <input src="text" placeholder="Search"/>
+			 
+			 </div>
+			 
+		  </div>
+
+	   </div>
+
+   </header>
+
+   <article class="main-page">
+ 
+		 <section class="newsbar">
+		   
+		      <div class="fieldwidth">
+			   
+			      <h2 class="newsheader">NEWS<span class="ukheader">UK</span></h2>
+			     
+				  <div class="rss">
+				  
+				      RSS<img src="images/rss.png"> 
+				  
+				  </div>
+				  
+				
+		          <nav class="menubar">
+				    
+					  <ul>
+					
+					    <li>Home</li>
+					    <li>World</li>
+					    <li>England</li>
+					    <li>N. Ireland</li>
+					    <li>Scotland</li>					
+					    <li>Wales</li>
+					    <li>Business</li>
+					    <li>Politics</li>					
+					    <li>Health</li>
+					    <li>Education</li>
+						<li>Sci/Environment</li>					
+					    <li>Technology</li>
+					    <li>Entertainment & Arts</li>
+					
+					
+					   </ul>
+				 
+			        </nav>
+		   
+			  </div>
+			  
+		   </section>
+		
+		 
+		   <section class="content">
+			   
+			   <div class="fieldwidth">
+
+				  <section class="main">
+ 
+                     <p><span class="date">2 April 2014</span> Last updated on 15:59</p>
+					 
+					 <section class="newsitem">
+
+                        <h2><a class="headstyle" href="http://www.bbc.com/news/uk-26847843">Pollution to spread across England</a></h2>
+					    	
+
+					    <div class="newsitemcontent clearfix">		
+					        <img class="headimage"src="images/pollution.png" />	
+
+					        <div class="newsitemcontentstyle">
+
+							    <p>Health warnings have been issued by the government as pollution spreding across England is forecast to hit high levels.</p>
+
+		                        <ul>
+							
+								  <li><a class="video" href="http://www.bbc.com/news/uk-26848488">Why are pollution levels so high?</a></li>
+								  <li><a class="video" href="http://www.bbc.com/news/science-environment-26848489">Saharan dust visible on cars</a></li>
+								  <li><a class="video" href="http://www.bbc.com/news/uk-26854586">How Saharan dust reached the UK</a></li>
+								  <li><a href="http://www.bbc.com/news/health-26850177">What will pollution do to us?</a></li>
+								  <li><a class="sound" href="">Air pollution a 'serious issue'</a></li>					
+								
+							    </ul>
+
+						    </div>
+                         
+						</div>
+					
+					 </section>
+					
+					<hr>
+					 
+					 <section class="bbcbreaking" >
+					 
+					    <img src="images/breakingnews.png" class="breakingimage"/>
+						<h4>Former BBC driver 'took own life' <span class="headnew">NEW</span></h4>
+						<br />
+						<p>A former BBC driver, who was the first person to be charged as part of operation Yewtree, took his own life, a coroner rules.</p>
+					 
+					 </section>
+					 
+					<hr>
+					
+				  </section>
+				   
+				  <aside class="side"> 
+				   
+					 <section class="watchlisten">
+					 
+					    <h3>Watch/Listen</h3>
+					    <br />
+						<img src="images/leftmove.png" class="leftmove">
+						
+						<div class="wl1">
+						
+						<img src="images/watchlisten1.png">
+						<p><a href="">Titanic letter could fetch &euro; 100,000</a></p>
+						
+						</div>
+						
+						<div class="wl2">
+						
+						<img src="images/watchlisten2.png">
+						<p><a href="">The housing state delivering its own mail</a></p>
+						
+						</div>
+						
+						<img src="images/rightmove.png" class="rightmove">
+						
+						<div class="live">
+						
+						<img src="images/live.png" />
+						<p>BBC News channel</p>
+						
+						</div>
+					 
+					 </section>
+					 
+					 <section class="analysis">
+					 
+					    <h3>Features & Analysis</h3>
+					    <div class="features">
+					   
+						  <ul>
+						
+						    <li><img src="images/toxic.png" ><h4>Toxic topic?</h4><br /><p>How safe are e-cigarettes - and should they be banned?</p></li>
+						    <li><img src="images/colors.png" ><h4>Counting colours</h4><br /><p>How to reach the seven-a-day fruit and veg target</p></li>
+						    <li><img src="images/angle.png" ><h4>Angle of descent</h4><br /><p>The landscape bordering Heathrow Airport</p></li>
+						 
+						  </ul>
+						   
+					    </div>		
+					 
+					 </section>
+					 
+				   </aside>	 
+				 
+				</div>
+				
+			 </section>
+		
+    </article>
+
+    <footer>
+
+     <div class="bottom">
+	 
+	      <div class="fieldwidth">
+		  
+		    <h2>Explore the BBC</h2>  
+		    <p>Copyright © 2016 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+		
+		  </div>
+
+	   </div>
+    	
+    </footer>
+
+ </body>
+
+</html>
